@@ -1,1 +1,1 @@
-This a simple wikipedia's viewer project
+This's a simple wikipedia's viewer project
