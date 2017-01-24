@@ -1,0 +1,40 @@
+body {
+   background-color: whitesmoke;
+   font-family: 'Roboto', sans-serif;
+}
+
+#search-box-div {
+   width: 100%;
+   margin: 10px 0px; 
+}
+
+#search-box {
+   width: 100%;
+}
+
+#links div {
+   background-color: lightgray;   
+   color: black;
+   padding: 10px;
+   margin: 10px 0px; 
+}
+
+#links div h3 {
+   margin: 10px 10px;
+}
+
+#links div p {
+   margin: 5px 10px;
+   font-size: 18px; 
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+#links div:hover {    
+   border-left-color: lawngreen;
+   border-left-style: solid;
+   border-left-width: 5px;
+   margin-left: -5px;
+}
