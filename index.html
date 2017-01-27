@@ -1,5 +1,5 @@
-<DOCTYPE html>
-<html>          
+<!DOCTYPE html>
+<html lang="en">          
     <head>
         <title>Wiki's viewer</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -7,20 +7,26 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/wiki-viewer.css">
         <script src="js/wiki-viewer.js"></script>
+        <link rel="stylesheet" href="css/animate.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row center-block">
-                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <div id="search-box-div">
-                        <input type="text" id="search-box" class="form-control" list="search-options" placeholder="type your search term i.e. Albert Einstein">
-                        <datalist id="search-options">           
-                        </datalist>
-                    </div>
-                    <div id="links">
-                    </div>
+        <div id="father" class="container-fluid">
+            <div class="row slideInDown animated" id="button">
+                <div  class="col-md-6 col-md-offset-2 col-xs-6 ">
+                    <a role="button" class="btn btn-info" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get a random entry</a> 
                 </div>
+                <div class="col-md-2 col-xs-6">
+                    <p id="merchandising" class="text-right">by <a href="http:\\www.codepen.io\willianjonathan" target="_blank"> Willian Jonathan</a></p>
+                </div>
+            </div>
+            <div class="row slideInDown animated">               
+                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <input type="text" id="search-box" class="form-control" list="search-options" placeholder="Type what you want to search">
+                    <datalist id="search-options">           
+                    </datalist>
+                </div>  
             </div>
         </div>
     </body>
