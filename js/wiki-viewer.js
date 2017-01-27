@@ -23,12 +23,35 @@ $(document).ready(function(){
             }           
         }
 
-        });  
-  });  
+    });  
 
-  $("#search-box").on("keydown", function(event){
-    
-});
+    $("#search-box").on("change", function(event){
+        var value = "";
+        value = $("#search-box").val();
+
+        if(value == ""){
+                $("#links").remove();
+                $("#search-options").empty();
+                $("#father").addClass('position-before-links');
+        }else {      
+            if(data !== null){ 
+                if(isSearchValueDifferentFromMyCurrentData(data, value)){
+                        getLinks(value);
+                }else {
+                    var newData = [];
+                    newData = toSearchFromLocalData(data,value);
+                    toPopulateDataList(newData);  
+                    toPopulateLinks(newData);    
+                }
+            }else {
+                    getLinks(value);
+            }           
+        }
+
+    }); 
+});  
+
+ 
 
 
 var data = null;
